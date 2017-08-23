@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MesController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="111.0" onAction="#send">
+         <graphic>
+            <ImageView fitHeight="76.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mail_forward.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="458.0" layoutY="291.0" mnemonicParsing="false" text="назад" onAction="#exit"/>
+      <Text layoutX="197.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="За:" />
+      <Text layoutX="194.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Обект:" />
+      <TextField layoutX="262.0" layoutY="24.0" fx:id="to"/>
+      <TextField layoutX="262.0" layoutY="63.0" fx:id="sub"/>
+      <TextArea layoutX="14.0" layoutY="102.0" prefHeight="189.0" prefWidth="498.0" fx:id="mesTextArea"/>
+   </children>
+</AnchorPane>

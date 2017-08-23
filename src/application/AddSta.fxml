@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddController">
+   <children>
+      <TextField fx:id="nameP" layoutX="52.0" layoutY="34.0" />
+      <TextField fx:id="priceP" layoutX="52.0" layoutY="68.0" />
+      <TextField fx:id="barcodeP" layoutX="52.0" layoutY="100.0" />
+      <Button layoutX="245.0" layoutY="145.0" mnemonicParsing="false" onAction="#addP" text="напред" />
+      <Button layoutX="308.0" layoutY="145.0" mnemonicParsing="false" text="назад" />
+      <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="име" />
+      <Text layoutX="13.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="цена" />
+      <Text layoutX="7.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="баркод" />
+      <ImageView fitHeight="108.0" fitWidth="110.0" layoutX="232.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/add%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

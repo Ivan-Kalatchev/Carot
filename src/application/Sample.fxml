@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#on_key" prefHeight="463.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <MenuBar prefHeight="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Режим">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Касиер" />
+                  <MenuItem mnemonicParsing="false" text="Мениджър" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Операции">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Нов потребител" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Наръчник" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="388.0" prefWidth="283.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tableProducts" fixedCellSize="0.0" prefHeight="388.0" prefWidth="327.0">
+              <columns>
+                 <TableColumn fx:id="columnName" prefWidth="106.0" text="продукт" />
+                  <TableColumn fx:id="columnbr" prefWidth="71.0" text="Брой" />
+                  <TableColumn fx:id="columnsum" prefWidth="66.0" text="ед. цена" />
+                <TableColumn fx:id="columnPrice" prefWidth="90.0" text="сума" />             
+                 </columns>
+            </TableView>
+            <VBox prefHeight="388.0" prefWidth="158.0">
+               <children>
+                  <HBox prefHeight="0.0" prefWidth="169.0">
+                     <children>
+                        <TextField fx:id="text" prefHeight="25.0" prefWidth="156.0" />
+                     </children>
+                  </HBox>
+                  <FlowPane prefHeight="200.0" prefWidth="179.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#zeronum" prefHeight="16.0" prefWidth="46.0">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_0.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onenum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#twonum" prefHeight="40.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trinum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#fournum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#fivenum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#sixnum" prefHeight="40.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_6.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#sevennum" prefHeight="40.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_7.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#eightnum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_8.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#ninenum" prefHeight="42.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/keyboard_key_9.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#starnum" prefHeight="46.0" prefWidth="52.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/237279-Keyboard_star-512.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#dotnum" prefHeight="47.0" prefWidth="53.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/120114-200.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#connect" prefHeight="51.0" prefWidth="156.0" text="ENTER" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane prefHeight="148.0" prefWidth="170.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="76.0" onAction="#openManager">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/platform_truck_box.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="79.0" onAction="#open">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/mail.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="74.0">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/invoice_dollar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="82.0" onAction="#log_out">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/door_exit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <FlowPane prefHeight="388.0" prefWidth="114.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="110.0" prefWidth="114.0">
+                     <graphic>
+                        <ImageView fitHeight="87.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/wallet_empty%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="113.0">
+                     <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/money_refund.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="87.0" prefWidth="115.0">
+                     <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/system.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="111.0">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/cash_register.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newe" text="Нов" />
+            <Button mnemonicParsing="false" onAction="#pay" text="Плати" />
+            <Label text="Сума:" />
+            <Text fx:id="price" fill="#fc0000" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

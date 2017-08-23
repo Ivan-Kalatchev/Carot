@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="354.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="application.MesController" fx:id="sTableV">
+  <columns>
+    <TableColumn prefWidth="75.0" text="За" fx:id="toTable"/>
+    <TableColumn prefWidth="75.0" text="От" fx:id="fromTable"/>
+      <TableColumn prefWidth="75.0" text="Тема" fx:id="subTable"/>
+  </columns>
+</TableView>

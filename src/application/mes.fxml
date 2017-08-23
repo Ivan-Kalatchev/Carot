@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MesController">
+   <children>
+      <FlowPane prefHeight="97.0" prefWidth="289.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="99.0" onAction="#openMesStage">
+               <graphic>
+                  <ImageView fitHeight="85.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/mail_open2%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#newm" prefHeight="96.0" prefWidth="104.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/add%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="93.0" prefWidth="396.0">
+               <children>
+                  <Label layoutX="82.0" layoutY="14.0" text="От:" />
+                  <Label layoutX="82.0" layoutY="40.0" text="До:" />
+                  <Text layoutX="117.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="131.13671875" fx:id="fromwhomes"/>
+                  <Text layoutX="117.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="131.1367191374302" />
+                  <Label layoutX="77.0" layoutY="66.0" text="Тема:" />
+                  <Text layoutX="117.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="131.1367191374302" />
+               </children>
+            </AnchorPane>
+         </children>
+      </FlowPane>
+      <AnchorPane prefHeight="304.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="270.0" prefWidth="600.0" />
+            <Button layoutX="534.0" layoutY="270.0" mnemonicParsing="false" onAction="#exitm" text="назад" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
