@@ -51,6 +51,7 @@ public class SampleController {
 		this.items = FXCollections.observableArrayList();
 
 	}
+	
 
 	public void initialize(){
 		columnPrice.setCellValueFactory(new PropertyValueFactory<Product, BigDecimal>("suma"));
