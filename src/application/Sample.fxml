@@ -257,7 +257,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#newe" text="Нов" />
             <Button mnemonicParsing="false" onAction="#pay" text="Плати" />
-            <Label text="Сума  :" />
+            <Label text="Сума:" />
             <Text fx:id="price" fill="#fc0000" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.13671875">
                <font>
                   <Font size="24.0" />
